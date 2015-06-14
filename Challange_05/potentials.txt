@@ -1,0 +1,16 @@
+linux/x86/adduser                                   Create a new user with UID 0
+linux/x86/chmod                                     Runs chmod on specified file with specified mode
+linux/x86/exec                                      Execute an arbitrary command
+linux/x86/read_file                                 Read up to 4096 bytes from the local file system and write it back out to the specified file descriptor
+linux/x86/shell/bind_nonx_tcp                       Spawn a command shell (staged). Listen for a connection
+linux/x86/shell/bind_tcp                            Spawn a command shell (staged). Listen for a connection
+linux/x86/shell/find_tag                            Spawn a command shell (staged). Use an established connection
+linux/x86/shell/reverse_ipv6_tcp                    Spawn a command shell (staged). Connect back to attacker over IPv6
+linux/x86/shell/reverse_nonx_tcp                    Spawn a command shell (staged). Connect back to the attacker
+linux/x86/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+linux/x86/shell_bind_ipv6_tcp                       Listen for a connection over IPv6 and spawn a command shell
+linux/x86/shell_bind_tcp                            Listen for a connection and spawn a command shell
+linux/x86/shell_bind_tcp_random_port                Listen for a connection in a random port and spawn a command shell. Use nmap to discover the open port: 'nmap -sS target -p-'.
+linux/x86/shell_find_port                           Spawn a shell on an established connection
+linux/x86/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+linux/x86/shell_reverse_tcp2                        Connect back to attacker and spawn a command shell

@@ -1,0 +1,5 @@
+Decode hexa strings:
+perl -le 'print map {chr hex} qw/ 63 74 65 2f/'
+or
+echo "63 74 65 2f"|perl -nE 'say map{chr(hex)} split'
+“cte/” -> which will be “/etc” because of little endian

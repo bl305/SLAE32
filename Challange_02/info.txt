@@ -1,0 +1,12 @@
+This blog post has been created for completing the requirements of the SecurityTube Linux Assembly Expert certification:
+
+http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/
+
+Student OD: SLAE-644
+
+GitHub resource containing challenge files:
+
+https://github.com/bl305/SLAE32
+
+Link to the details:
+http://itfanatic.com/?q=node/92

@@ -1,0 +1,8 @@
+set disassembly-flavor intel 
+break *&code
+run 
+disassemble 
+define hook-stop
+disassemble 
+info registers
+end

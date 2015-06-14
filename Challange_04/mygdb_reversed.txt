@@ -1,0 +1,23 @@
+./compile.sh ch04
+
+gdb ./shellcode
+set disassembly-flavor intel
+break main
+run
+break *&code
+continue
+display /x $edi
+display /x $esi
+display /x $eip
+display /x $edx
+display /x $ecx
+display /x $ebx
+display /x $eax
+display /x $al
+display /x $ah
+define hook-stop
+disassemble $eip,+10
+x/3xw $esi-6
+x/12xb $esi-4
+end
+stepi

