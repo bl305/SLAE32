@@ -5,7 +5,7 @@ This blog post has been created for completing the requirements of the SecurityT
 
 http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/
 
-Student OD: SLAE-644
+Student ID: SLAE-644
 
 GitHub resource containing challenge files:
 
